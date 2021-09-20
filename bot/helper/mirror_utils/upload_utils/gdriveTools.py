@@ -130,7 +130,7 @@ class GoogleDriveHelper:
                                      resumable=False)
         file_metadata = {
             'name': file_name,
-            'description': 'Uploaded using Slam Mirrorbot',
+            'description': 'Uploaded using Silver Mirrorbot',
             'mimeType': mime_type,
         }
         if parent_id is not None:
@@ -189,7 +189,7 @@ class GoogleDriveHelper:
         # File body description
         file_metadata = {
             'name': file_name,
-            'description': 'Uploaded by Slam Mirrorbot',
+            'description': 'Uploaded by Silver Mirrorbot',
             'mimeType': mime_type,
         }
         try:
@@ -587,9 +587,9 @@ class GoogleDriveHelper:
                     content += f'<b> | <a href="https://telegra.ph/{self.path[nxt_page]}">Next</a></b>'
                     nxt_page += 1
             Telegraph(access_token=telegraph_token).edit_page(path = self.path[prev_page],
-                                 title = 'Slam Mirrorbot Search',
-                                 author_name='Slam Mirrorbot',
-                                 author_url='https://github.com/SlamDevs/slam-mirrorbot',
+                                 title = 'Silver Mirrorbot Search',
+                                 author_name='Silver Cloud',
+                                 author_url='https://t.me/silvercloudxd',
                                  html_content=content)
         return
 
@@ -774,9 +774,9 @@ class GoogleDriveHelper:
 
         for content in self.telegraph_content :
             self.path.append(Telegraph(access_token=telegraph_token).create_page(
-                                                    title = 'Slam Mirrorbot Search',
-                                                    author_name='Slam Mirrorbot',
-                                                    author_url='https://github.com/SlamDevs/slam-mirrorbot',
+                                                    title = 'Silver Mirrorbot Search',
+                                                    author_name='Silver Cloud',
+                                                    author_url='https://t.me/silvercloudxd',
                                                     html_content=content
                                                     )['path'])
 
