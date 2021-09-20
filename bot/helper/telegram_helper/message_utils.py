@@ -8,6 +8,10 @@ from bot import AUTO_DELETE_MESSAGE_DURATION, LOGGER, bot, \
 from bot.helper.ext_utils.bot_utils import get_readable_message, get_readable_file_size, get_readable_time, MirrorStatus, setInterval
 from telegram.error import TimedOut, BadRequest
 
+def postCH(text: str, bot, update: Update, reply_markup: InlineKeyboardMarkup):
+    return bot.send_message(chat_id=-1001165339807,
+                            text=text, reply_markup=reply_markup, parse_mode='HTMl')
+
 
 def sendMessage(text: str, bot, update: Update):
     try:
