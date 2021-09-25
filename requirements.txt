@@ -10,9 +10,11 @@ google-api-python-client
 google-auth-httplib2
 google-auth-oauthlib
 gunicorn
+hachoir
 js2py
 lk21
 lxml
+pillow
 psutil
 psycopg2-binary
 pybase64
