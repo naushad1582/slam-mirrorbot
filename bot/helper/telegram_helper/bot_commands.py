@@ -14,7 +14,7 @@ class _BotCommands:
         self.UnAuthorizeCommand = 'unauthorize5'
         self.AddSudoCommand = 'addsudo5'
         self.RmSudoCommand = 'rmsudo5'
-        self.PingCommand = 'ping5'
+        self.PingCommand = 'ping'
         self.RestartCommand = 'restart5'
         self.StatsCommand = 'stats5'
         self.HelpCommand = 'help5'
